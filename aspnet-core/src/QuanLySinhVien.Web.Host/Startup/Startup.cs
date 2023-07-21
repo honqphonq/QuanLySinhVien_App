@@ -56,6 +56,8 @@ namespace QuanLySinhVien.Web.Host.Startup
 
             services.AddSignalR();
 
+            services.AddApplication();
+
             // Configure CORS for angular2 UI
             services.AddCors(
                 options => options.AddPolicy(
