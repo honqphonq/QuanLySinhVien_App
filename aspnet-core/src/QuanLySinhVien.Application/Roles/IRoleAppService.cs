@@ -1,16 +1,12 @@
-﻿using System.Threading.Tasks;
-using Abp.Application.Services;
-using Abp.Application.Services.Dto;
+﻿using Abp.Application.Services;
 using QuanLySinhVien.Roles.Dto;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace QuanLySinhVien.Roles
 {
-    public interface IRoleAppService : IAsyncCrudAppService<RoleDto, int, PagedRoleResultRequestDto, CreateRoleDto, RoleDto>
+    public interface IRoleAppService : IApplicationService
     {
-        Task<ListResultDto<PermissionDto>> GetAllPermissions();
-
-        Task<GetRoleForEditOutput> GetRoleForEdit(EntityDto input);
-
-        Task<ListResultDto<RoleListDto>> GetRolesAsync(GetRolesInput input);
+        Task<List<RoleListDto>> GetAll(GetRolesInput input);
     }
 }

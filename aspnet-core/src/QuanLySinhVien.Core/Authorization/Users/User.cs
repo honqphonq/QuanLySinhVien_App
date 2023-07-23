@@ -30,5 +30,17 @@ namespace QuanLySinhVien.Authorization.Users
 
             return user;
         }
+
+        public void Activate()
+        {
+            IsActive = true;
+            AccessFailedCount = 0;
+            LockoutEndDateUtc = null;
+        }
+
+        public void Suspend() 
+        {
+            IsActive = false;
+        }   
     }
 }
