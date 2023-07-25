@@ -2,9 +2,9 @@ import { Component} from '@angular/core';
 import { appModuleAnimation } from '@shared/animations/routerTransition';
 
 @Component({
-  templateUrl: './users.component.html',
+  templateUrl: './user-list.page.html',
   animations: [appModuleAnimation()]
 })
-export class UsersComponent {
+export class UserListPage {
   
 }

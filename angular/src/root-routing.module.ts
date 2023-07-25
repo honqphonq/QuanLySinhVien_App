@@ -10,7 +10,7 @@ const routes: Routes = [
     },
     {
         path: 'app',
-        loadChildren: () => import('app/app.module').then(m => m.AppModule), // Lazy load account module
+        loadChildren: () => import('app/features/app.module').then(m => m.AppModule), // Lazy load account module
         data: { preload: true }
     }
 ];

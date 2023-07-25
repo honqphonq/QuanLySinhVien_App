@@ -12,32 +12,21 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ServiceProxyModule } from '@shared/service-proxies/service-proxy.module';
 import { SharedModule } from '@shared/shared.module';
-import { HomeComponent } from '@app/home/home.component';
-import { AboutComponent } from '@app/about/about.component';
-// users
-import { UsersComponent } from '@app/users/users.component';
 // layout
-import { HeaderComponent } from './layout/header.component';
-import { HeaderLeftNavbarComponent } from './layout/header-left-navbar.component';
-import { HeaderLanguageMenuComponent } from './layout/header-language-menu.component';
-import { HeaderUserMenuComponent } from './layout/header-user-menu.component';
-import { FooterComponent } from './layout/footer.component';
-import { SidebarComponent } from './layout/sidebar.component';
-import { SidebarLogoComponent } from './layout/sidebar-logo.component';
-import { SidebarUserPanelComponent } from './layout/sidebar-user-panel.component';
-import { SidebarMenuComponent } from './layout/sidebar-menu.component';
+import { HeaderComponent } from '../layout/header.component';
+import { HeaderLanguageMenuComponent } from '../layout/header-language-menu.component';
+import { HeaderUserMenuComponent } from '../layout/header-user-menu.component';
+import { SidebarComponent } from '../layout/sidebar.component';
+import { SidebarLogoComponent } from '../layout/sidebar-logo.component';
+import { SidebarUserPanelComponent } from '../layout/sidebar-user-panel.component';
+import { SidebarMenuComponent } from '../layout/sidebar-menu.component';
 
 @NgModule({
     declarations: [
         AppComponent,
-        HomeComponent,
-        AboutComponent,
-        UsersComponent,
         HeaderComponent,
-        HeaderLeftNavbarComponent,
         HeaderLanguageMenuComponent,
         HeaderUserMenuComponent,
-        FooterComponent,
         SidebarComponent,
         SidebarLogoComponent,
         SidebarUserPanelComponent,
