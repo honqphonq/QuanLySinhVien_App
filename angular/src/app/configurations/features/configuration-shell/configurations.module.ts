@@ -5,17 +5,23 @@ import { ConfigurationsPage } from '../configuration-page/configurations.page'
 import { SharedModule } from '@shared/shared.module';
 import { ConfigurationsRoutingModule } from '../configuration-shell/configurations-routing.module'
 import {ConfigurationsSubjectComponent} from '../configuration-subject/configurations-subject.component'
+import { NzLayoutModule } from 'ng-zorro-antd/layout';
+import {ConfigurationsPageLayoutComponent} from '../../ui/configurations-page-layout/configurations-page-layout.component';
+import {ConfigurationsSidebarComponent} from '../../ui/configurations-sidebar/configurations-sidebar.component'
 
 @NgModule({
   declarations: [
     ConfigurationsPage,
     ConfigurationsSubjectComponent,
+    ConfigurationsPageLayoutComponent,
+    ConfigurationsSidebarComponent
   ],
   imports: [
     ConfigurationsRoutingModule,
     CommonModule,
     SharedModule,
     ReactiveFormsModule,
+    NzLayoutModule
   ],
 })
 export class ConfigurationsModule { }

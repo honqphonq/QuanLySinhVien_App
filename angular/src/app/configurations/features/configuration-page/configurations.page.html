@@ -1,1 +1,12 @@
-<div>Configuration Page</div>
+<div class="flex h-full">
+  <nz-sider
+    [nzTrigger]="null"
+    nzTheme="light"
+    class="hidden bg-background md:block"
+  >
+    <app-configurations-sidebar></app-configurations-sidebar>
+  </nz-sider>
+  <nz-content>
+    <router-outlet></router-outlet>
+  </nz-content>
+</div>
