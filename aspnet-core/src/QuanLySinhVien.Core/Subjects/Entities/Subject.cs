@@ -9,7 +9,7 @@ public class Subject : Entity<Guid>
 
     public string Description { get; private set; }
 
-    public Subject Create(string name, string? description)
+    public static Subject Create(string name, string? description)
     {
         return new Subject
         {

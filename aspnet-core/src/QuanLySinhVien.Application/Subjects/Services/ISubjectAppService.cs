@@ -8,4 +8,6 @@ namespace QuanLySinhVien.Subjects.Services;
 public interface ISubjectAppService : IApplicationService
 {
     Task<List<SubjectGetAllResponse>> GetAll(SubjectGetAllRequest request);
+
+    Task Create(SubjectCreateRequest request);
 }

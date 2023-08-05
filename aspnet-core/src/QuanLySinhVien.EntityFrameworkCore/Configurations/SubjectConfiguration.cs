@@ -17,6 +17,5 @@ public class SubjectConfiguration : IEntityTypeConfiguration<Subject>
 
         builder.Property(x => x.Description)
             .HasMaxLength(SubjectConsts.DescriptionMaxLength);
-        
     }
 }
