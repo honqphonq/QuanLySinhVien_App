@@ -12,14 +12,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ServiceProxyModule } from '@shared/service-proxies/service-proxy.module';
 import { SharedModule } from '@shared/shared.module';
+import { NzLayoutModule } from 'ng-zorro-antd/layout';
+import { NzIconModule } from 'ng-zorro-antd/icon';
+import { NzMenuModule } from 'ng-zorro-antd/menu';
+
 // layout
-import { HeaderComponent } from '../layout/header.component';
-import { HeaderLanguageMenuComponent } from '../layout/header-language-menu.component';
-import { HeaderUserMenuComponent } from '../layout/header-user-menu.component';
-import { SidebarComponent } from '../layout/sidebar.component';
-import { SidebarLogoComponent } from '../layout/sidebar-logo.component';
-import { SidebarUserPanelComponent } from '../layout/sidebar-user-panel.component';
-import { SidebarMenuComponent } from '../layout/sidebar-menu.component';
+import { HeaderComponent } from '../layout/header/header.page';
+import { HeaderLanguageMenuComponent } from '../layout/header/header-language-menu.component';
+import { HeaderUserMenuComponent } from '../layout/header/header-user-menu.component';
+import { SidebarComponent } from '../layout/sidebar/sidebar.page';
+import { SidebarMenuComponent } from '../layout/sidebar/sidebar-menu.component';
 
 @NgModule({
     declarations: [
@@ -28,8 +30,6 @@ import { SidebarMenuComponent } from '../layout/sidebar-menu.component';
         HeaderLanguageMenuComponent,
         HeaderUserMenuComponent,
         SidebarComponent,
-        SidebarLogoComponent,
-        SidebarUserPanelComponent,
         SidebarMenuComponent
     ],
     imports: [
@@ -46,6 +46,9 @@ import { SidebarMenuComponent } from '../layout/sidebar-menu.component';
         ServiceProxyModule,
         SharedModule,
         NgxPaginationModule,
+        NzLayoutModule,
+        NzIconModule,
+        NzMenuModule,
     ],
     providers: []
 })

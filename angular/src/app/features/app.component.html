@@ -1,8 +1,10 @@
 <div class="wrapper">
-  <app-header></app-header>
-  <sidebar></sidebar>
-  <div class="content-wrapper">
-    <router-outlet></router-outlet>
-  </div>
-  <div id="sidebar-overlay" (click)="toggleSidebar()"></div>
+  <nz-layout class="flex">
+    <div class="w-[20%]">
+      <sidebar></sidebar>
+    </div>
+    <nz-layout class="min-h-screen w-[80%] pt-navbar">
+      <router-outlet></router-outlet>
+    </nz-layout>
+  </nz-layout>
 </div>

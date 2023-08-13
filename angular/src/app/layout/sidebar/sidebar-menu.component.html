@@ -1,0 +1,30 @@
+<nz-layout>
+  <nz-sider nzCollapsible nzWidth="200px">
+    <ul
+      class="nav nav-pills nav-sidebar flex-column nav-flat"
+      data-widget="treeview"
+      role="menu"
+      data-accordion="false"
+      *ngFor="let item of menuItems"
+    >
+      <li
+        *ngIf="isMenuItemVisible(item)"
+        class="nav-item"
+        [class.menu-open]="!item.isCollapsed"
+        [class.has-treeview]="item.children"
+      >
+        <span
+          *ngIf="item.route && item.route.indexOf('http') != 0"
+          class="nav-link"
+          [routerLink]="item.route"
+          [class.active]="item.isActive"
+        >
+          <i class="nav-icon {{ item.icon }}"></i>
+          <p>
+            {{ item.label }}
+          </p>
+        </span>
+      </li>
+    </ul>
+  </nz-sider>
+</nz-layout>
