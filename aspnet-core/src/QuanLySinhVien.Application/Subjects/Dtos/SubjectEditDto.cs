@@ -4,9 +4,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace QuanLySinhVien.Subjects.Dtos
-{
-    internal class SubjectEditDto
-    {
-    }
-}
+namespace QuanLySinhVien.Subjects.Dtos;
+
+public record SubjectEditDto(Guid Id, string Name, string Description);

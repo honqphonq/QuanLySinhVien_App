@@ -9,5 +9,9 @@ public interface ISubjectAppService : IApplicationService
 {
     Task<List<SubjectGetAllResponse>> GetAll(SubjectGetAllRequest request);
 
-    Task Create(SubjectCreateRequest request);
+    Task<SubjectGetResponse> Get(SubjectGetRequest request);
+
+    Task Create(SubjectCreateRequest input);
+
+    Task Edit(SubjectEditDto input);
 }
