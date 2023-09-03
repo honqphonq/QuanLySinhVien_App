@@ -1404,6 +1404,13 @@
   resolved "https://registry.yarnpkg.com/@leichtgewicht/ip-codec/-/ip-codec-2.0.4.tgz#b2ac626d6cb9c8718ab459166d4bb405b8ffa78b"
   integrity sha512-Hcv+nVC0kZnQ3tD9GVu5xSMR4VVYOteQIr/hwFPVEvPdlXqgGEuRjiheChHgdM+JyqdgNcmzZOX/tnl0JOiI7A==
 
+"@ng-select/ng-select@^11.1.1":
+  version "11.1.1"
+  resolved "https://registry.yarnpkg.com/@ng-select/ng-select/-/ng-select-11.1.1.tgz#49fc89420bfc4022543833de5212214a1e00a0dd"
+  integrity sha512-Z5wV/u2HgaKl7CQSG3Sy1oF+BPQolmVV6jBuPqHa2+OWg0Nn2e9eXYdcZT8Q3BahfP5j5rHNIBrkkESg/m4YiQ==
+  dependencies:
+    tslib "^2.3.1"
+
 "@ngtools/webpack@15.0.3":
   version "15.0.3"
   resolved "https://registry.yarnpkg.com/@ngtools/webpack/-/webpack-15.0.3.tgz#a76a883ec47bbe3c8c92da4ac8e56d64cdbffb08"
@@ -1961,6 +1968,18 @@ admin-lte-css-only@^3.2.0:
   version "3.2.0"
   resolved "https://registry.yarnpkg.com/admin-lte-css-only/-/admin-lte-css-only-3.2.0.tgz#05d6d66afeb95bc0367f0e67a61260b37ec1a20d"
   integrity sha512-4g+ti2ruv7SjLGiNBwYA7Y2m2bPjAwcCrAPPUxtu3A9EBrspedD7rmm1FlEYmekNlLalRpyXCxHqcFhNdjW3vg==
+
+ag-grid-angular@^30.1.0:
+  version "30.1.0"
+  resolved "https://registry.yarnpkg.com/ag-grid-angular/-/ag-grid-angular-30.1.0.tgz#4236a09d1d07934e498cc07166caf89e62200855"
+  integrity sha512-Fslijnu6S5wQ8HsW3WfMG9A52qPL1s1X+59wiEp+8yHk9c0Y1Vh0r3uPIFA7ukicLqBM6y1XJeaLfL8TH1DoMw==
+  dependencies:
+    tslib "^2.3.0"
+
+ag-grid-community@^30.1.0:
+  version "30.1.0"
+  resolved "https://registry.yarnpkg.com/ag-grid-community/-/ag-grid-community-30.1.0.tgz#50c532df2e6cc22596300b801651eca76459a189"
+  integrity sha512-D69e63CUALxfgLZSu1rXC8Xiyhu6+17zxzTV8cWsyvt5GeSDv2frQ3BKOqGZbUfVoOCLv2SQoHVTTqw8OjxavA==
 
 agent-base@6, agent-base@^6.0.2:
   version "6.0.2"
@@ -7244,6 +7263,11 @@ tslib@^2.1.0:
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.3.0.tgz#803b8cdab3e12ba581a4ca41c8839bbb0dacb09e"
   integrity sha512-N82ooyxVNm6h1riLCoyS9e3fuJ3AMG2zIZs2Gd1ATcSFjSA23Q0fzjjZeh0jbJvWVDZ0cJT8yaNNaaXHzueNjg==
+
+tslib@^2.3.1:
+  version "2.6.2"
+  resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.6.2.tgz#703ac29425e7b37cd6fd456e92404d46d1f3e4ae"
+  integrity sha512-AEYxH93jGFPn/a2iVAwW87VuUIkR1FVUKB77NwMF7nBTDkDrrT/Hpt/IrCJ0QXhW27jTBDcf5ZY7w6RiqTMw2Q==
 
 tslint@~6.1.0:
   version "6.1.3"

@@ -1,0 +1,5 @@
+.yarn
+.angular
+nswag
+dist
+node_modules

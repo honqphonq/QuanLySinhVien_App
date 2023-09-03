@@ -1,6 +1,120 @@
+@import 'ag-grid-community/styles/ag-grid.css';
+@import 'ag-grid-community/styles/ag-theme-alpine.css';
+
+@import 'ng-zorro-antd/ng-zorro-antd.less';
+
+@color-primary: #00b2be;
+
+@layout-body-background: #f8f8fa;
+@primary-color: @color-primary;
+@btn-primary-bg: @color-primary;
+@btn-primary-color: @color-primary;
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  :root {
+    --navbar-height: 64px;
+    --mobile-header-height: 60px;
+
+    --muted: 0 0% 96%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --primary: 184, 100%, 37%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 100% 50%;
+    --destructive-foreground: 210 40% 98%;
+
+    --sidebar: 187 39% 91%;
+    --sidebar-foreground: 184 69% 46%;
+  }
+
+  [type='url'],
+  [type='date'],
+  [type='datetime-local'],
+  [type='month'],
+  [type='search'],
+  [type='tel'],
+  [type='time'],
+  [type='week'],
+  [multiple],
+  textarea,
+  select {
+    @apply w-full rounded-lg border border-gray-300 px-4 py-2 text-base focus:border-primary-500 focus:outline-none focus:ring-primary-500 focus-visible:border-primary-500 focus-visible:ring-0;
+  }
+
+  [type='checkbox'],
+  [type='radio'] {
+    @apply rounded border-gray-300 text-primary-500 focus:ring-primary-500 focus-visible:border-primary-500;
+  }
+  [type='radio'] {
+    @apply rounded-full;
+  }
+  [type='text'],
+  [type='password'],
+  [type='number'] {
+    @apply w-full rounded-lg border border-gray-300 px-4 py-2 text-base focus:border-primary-500 focus:outline-none focus:ring-primary-500;
+  }
+}
+
+@layer components {
+  // Buttons
+
+  .btn {
+    @apply rounded-md px-4 py-2 capitalize text-white;
+  }
+
+  .btn-white {
+    @apply h-auto w-auto rounded-md border border-gray-400 bg-white px-4 py-2 text-gray-900 hover:border-primary-500 hover:text-primary-500;
+  }
+
+  .btn-ghost {
+    @apply bg-neutral-100 text-black hover:bg-neutral-200;
+  }
+
+  .btn-danger {
+    @apply bg-red-500 hover:bg-red-600;
+  }
+
+  // input
+  .input-primary {
+    @apply w-full rounded-md py-2 pl-2 text-sm text-gray-900 focus:border-none focus:border-primary-500 hover:border-primary-500 sm:text-sm;
+  }
+
+  .grid-config {
+    @apply block rounded bg-white p-4 text-sm;
+  }
+
+  .grid-cols-3-infor {
+    grid-template-columns: 2fr 3fr 3fr;
+  }
+
+  @media (max-width: 1280px) {
+    .grid-cols-3-infor {
+      grid-template-columns: 4fr 4fr;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .grid-cols-3-infor {
+      grid-template-columns: 8fr;
+    }
+  }
+
+  // card
+  .patient-card {
+    @apply rounded-lg border border-gray-200 bg-white px-8 py-4;
+  }
+}
 
 @media (min-width: 576px) {
   .nav-user-menu .user-image {
