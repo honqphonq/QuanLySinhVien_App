@@ -17,6 +17,7 @@ import { LayoutStoreService } from './layout/layout-store.service';
 
 import { BusyDirective } from './directives/busy.directive';
 import { EqualValidator } from './directives/equal-validator.directive';
+import { ActionRendererComponent } from './components/ag-grid/action-renderer/action-renderer.component';
 
 @NgModule({
     imports: [
@@ -31,7 +32,8 @@ import { EqualValidator } from './directives/equal-validator.directive';
         AbpModalFooterComponent,
         LocalizePipe,
         BusyDirective,
-        EqualValidator
+        EqualValidator,
+        ActionRendererComponent
     ],
     exports: [
         AbpPaginationControlsComponent,

@@ -1,0 +1,15 @@
+<span>
+  <a *ngIf="!!params.onEdit" (click)="edit($event)"
+    ><i class="fas fa-pen"></i
+  ></a>
+
+  <a *ngIf="!!params.onDelete" (click)="delete($event)"
+    ><i class="far fa-trash-alt"></i
+  ></a>
+
+  <a
+    *ngIf="!!params.onPrint && (getStatus() == 1 || getStatus() == undefined)"
+    (click)="print($event)"
+    ><span nz-icon nzType="printer" nzTheme="outline"></span
+  ></a>
+</span>

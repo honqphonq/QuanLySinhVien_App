@@ -1,0 +1,50 @@
+<form
+  autocomplete="off"
+  [formGroup]="form"
+  class="space-y-3"
+  (ngSubmit)="save()"
+>
+  <nz-form-item class="mb-0 block">
+    <nz-form-label nzRequired>Name</nz-form-label>
+    <div>
+      <input
+        formControlName="name"
+        id="name"
+        type="text"
+        class="input-primary"
+        nz-input
+      />
+      <val-errors controlName="name"></val-errors>
+    </div>
+    <nz-form-label>Description</nz-form-label>
+    <div>
+      <input
+        formControlName="description"
+        id="description"
+        type="text"
+        class="input-primary"
+        nz-input
+      />
+      <val-errors controlName="description"></val-errors>
+    </div>
+  </nz-form-item>
+  <nz-button-group class="mt-4 flex justify-end space-x-2">
+    <button
+      class="btn-white rounded-md"
+      nz-button
+      [disabled]="saving"
+      (click)="modalRef.close()"
+      type="button"
+    >
+      Cancel
+    </button>
+    <button
+      nz-button
+      nzType="primary"
+      class="btn-primary rounded-md"
+      [disabled]="saving"
+    >
+      Save
+    </button>
+  </nz-button-group>
+</form>

@@ -1,5 +1,5 @@
 <app-configurations-page-layout heading="Subject">
-  <div class="configurations-actions flex items-center space-x-3">    
+  <div class="configurations-actions flex items-center space-x-3">
     <div class="relative flex items-center space-x-6">
       <div class="absolute left-9 top-[6px]">
         <i class="fa fa-search text-neutral-400"></i>
@@ -7,21 +7,19 @@
       <input
         type="text"
         [formControl]="searchInput"
-        placeholder="{{'Search' | localize}}"
+        placeholder="Search"
         class="h-9 pl-9 pt-[6px] placeholder-neutral-400"
       />
     </div>
-    <button app-button (click)="add()">
-      <span class="hidden md:block"> {{'Add' | localize}} </span>
-      <span
-        class="block py-[3px] md:hidden"
-        nz-icon
-        nzType="plus"
-        nzTheme="outline"
-      ></span>
+    <button class="btn-primary" app-button (click)="add()">
+      <span> Add </span>
     </button>
   </div>
   <div>
-    <app-subjects-grid [items]="subjectServices$ | async"></app-subjects-grid>
+    <app-subjects-grid 
+      [items]="subjectServices$ | async"
+      (onDelete)="delete($event)"
+      (onEdit)="edit($event)"
+    ></app-subjects-grid>
   </div>
 </app-configurations-page-layout>
